@@ -195,6 +195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c97577e4908a274bb9bdd3e6d9b88d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _reloadDelay: 1
 --- !u!1 &52356607
 GameObject:
   m_ObjectHideFlags: 3
@@ -952,6 +953,7 @@ GameObject:
   - component: {fileID: 730636893}
   - component: {fileID: 730636895}
   - component: {fileID: 730636896}
+  - component: {fileID: 730636897}
   m_Layer: 0
   m_Name: Harry
   m_TagString: Player
@@ -1053,6 +1055,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdf202232f979ac4c892ce5e514e7c62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _reloadDelay: 0.5
+--- !u!70 &730636897
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 730636890}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.20547223, y: 0.48648593}
+  m_Size: {x: 1.4911017, y: 1.5862002}
+  m_Direction: 0
 --- !u!1 &1036380609
 GameObject:
   m_ObjectHideFlags: 0
