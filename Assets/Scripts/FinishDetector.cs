@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FinishDetector : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class FinishDetector : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Debug.Log("You finished!");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }    
     }
 }
