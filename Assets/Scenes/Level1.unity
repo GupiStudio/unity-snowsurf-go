@@ -1058,7 +1058,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdf202232f979ac4c892ce5e514e7c62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _reloadDelay: 0.5
+  _reloadDelay: 0.2
   particleEffect: {fileID: 944563700}
 --- !u!70 &730636897
 CapsuleCollider2D:
@@ -1248,7 +1248,7 @@ ParticleSystem:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  moveWithTransform: 0
+  moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
   randomSeed: 0
