@@ -13,11 +13,16 @@ public class CrashDetector : MonoBehaviour
     {
         if (other.CompareTag("Ground"))
         {
+            var playerController = FindObjectOfType<PlayerController>();
+
+            if (playerController)
+                playerController.DisableControls();
+                
             var audioSource = GetComponent<AudioSource>();
 
             if (audioSource)
                 audioSource.PlayOneShot(crashSfx);
-                
+
             if (particleEffect)
                 particleEffect.Play();
 

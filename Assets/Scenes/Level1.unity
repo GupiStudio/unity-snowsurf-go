@@ -1759,7 +1759,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdf202232f979ac4c892ce5e514e7c62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _reloadDelay: 0.2
+  _reloadDelay: 1
   particleEffect: {fileID: 944563700}
   crashSfx: {fileID: 8300000, guid: c44d1c07806ed3e4ba83a6c901f67f6d, type: 3}
 --- !u!70 &730636897
