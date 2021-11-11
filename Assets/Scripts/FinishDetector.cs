@@ -12,6 +12,11 @@ public class FinishDetector : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            var audioSource = GetComponent<AudioSource>();
+
+            if (audioSource)
+                audioSource.Play();
+
             if (particleEffect)
                 particleEffect.Play();
 
