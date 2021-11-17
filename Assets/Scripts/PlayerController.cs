@@ -36,6 +36,11 @@ public class PlayerController : MonoBehaviour
     {
         canMove = false;
     }
+
+    public SurfaceEffector2D GetSurfaceEffector2D()
+    {
+        return surfaceEffector2D;
+    }
     
     private void RespondToBoost()
     {
@@ -46,8 +51,6 @@ public class PlayerController : MonoBehaviour
             {
                 surfaceEffector2D.speed = boostSpeed;
                 boostHp -= 1 * Time.deltaTime;
-
-                Debug.Log("Boost HP: " + boostHp);
             }
         }
         else

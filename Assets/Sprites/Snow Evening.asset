@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: af7181f404f1447c0a7a17b3070b952b, type: 3}
-  m_Name: Snow Profile
+  m_Name: Snow Evening
   m_EditorClassIdentifier: 
   m_Angles:
   - m_Start: -180
     m_End: 180
     m_Order: 0
     m_Sprites:
-    - {fileID: 21300000, guid: 1367342afe8af634c81a4d569f755a04, type: 3}
-  m_FillTexture: {fileID: 2800000, guid: b1f94234904617d4aaf401129bfe55d1, type: 3}
+    - {fileID: 21300000, guid: aafa3188d08d1b045af7f33951d9a025, type: 3}
+  m_FillTexture: {fileID: 2800000, guid: f984ee9aef2b52a47a7c1ca7922ab3c6, type: 3}
   m_CornerSprites:
   - m_CornerType: 0
     m_Sprites:
@@ -44,5 +44,5 @@ MonoBehaviour:
   - m_CornerType: 7
     m_Sprites:
     - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
-  m_FillOffset: 0
+  m_FillOffset: 0.5
   m_UseSpriteBorders: 1

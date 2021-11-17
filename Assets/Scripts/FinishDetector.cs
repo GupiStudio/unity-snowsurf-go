@@ -7,6 +7,7 @@ public class FinishDetector : MonoBehaviour
 {
     [SerializeField] float _reloadDelay = 1f;
     [SerializeField] ParticleSystem particleEffect;
+    [SerializeField] string _nextScene;
     
     void OnTriggerEnter2D(Collider2D other) 
     {
@@ -20,13 +21,17 @@ public class FinishDetector : MonoBehaviour
             if (particleEffect)
                 particleEffect.Play();
 
-            Debug.Log("You finished!");
-            Invoke("ReloadScene", _reloadDelay);
+            Invoke("LoadNextScene", _reloadDelay);
         }    
     }
 
     void ReloadScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    void LoadNextScene()
+    {
+        SceneManager.LoadScene(_nextScene);
     }
 }

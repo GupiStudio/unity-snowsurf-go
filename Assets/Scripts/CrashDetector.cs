@@ -20,7 +20,10 @@ public class CrashDetector : MonoBehaviour
             var playerController = FindObjectOfType<PlayerController>();
 
             if (playerController)
+            {
                 playerController.DisableControls();
+                playerController.GetSurfaceEffector2D().speed = 0;
+            }
 
             var audioSource = GetComponent<AudioSource>();
 
@@ -32,7 +35,6 @@ public class CrashDetector : MonoBehaviour
             if (particleEffect)
                 particleEffect.Play();
 
-            Debug.Log("You died!");
             Invoke("ReloadScene", _reloadDelay);
         }
     }
