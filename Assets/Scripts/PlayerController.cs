@@ -8,12 +8,19 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float _torqueAmount = 1f;
     [SerializeField] float baseSpeed = 20f;
     [SerializeField] float boostSpeed = 30f;
-    [SerializeField] float boostHp = 10f;
+
+    [SerializeField] FloatReference currentBoost;
+    [SerializeField] FloatReference maxBoost;
 
     bool canMove = true;
 
     Rigidbody2D rb2d;
     SurfaceEffector2D surfaceEffector2D;
+
+    void Awake() 
+    {
+        currentBoost.Value = maxBoost.Value;
+    }
 
     void Start()
     {
@@ -47,10 +54,10 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.UpArrow))
         {
 
-            if (boostHp >= 0)
+            if (currentBoost.Value >= 0)
             {
                 surfaceEffector2D.speed = boostSpeed;
-                boostHp -= 1 * Time.deltaTime;
+                currentBoost.Value -= 1 * Time.deltaTime;
             }
         }
         else
